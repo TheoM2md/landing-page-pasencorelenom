@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+
+  <body>
+    <div class="columns">
+      <div class="column">
+        <figure class="image is-129x129">
+          <img
+            class="is-rounded"
+            src="data:image/png;base64,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"
+          />
+        </figure>
+      </div>
+      <div class="column">
+        <button class="button is-light">L'anecdote</button>
+      </div>
+      <div class="column">
+        <button class="button is-light">Les maillots historiques</button>
+      </div>
+      <div class="column">
+        <button class="button is-light">Suivez-nous</button>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <h1 class="title">Trouvez vos maillots de legende !</h1>
+
+        <h2 class="subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </h2>
+        <button class="button is-success">Trouver votre maillot</button>
+      </div>
+      <div class="column">
+        <figure class="image is-256x256">
+          <img
+            src="https://gentlemanmoderne.com/wp-content/uploads/2022/02/plus-beaux-maillots-nba-collection-1.jpeg"
+          />
+        </figure>
+      </div>
+    </div>
+    <section class="hero is-link">
+      <div class="hero-body">
+          <div class="columns">
+              <div class="column">
+       <center> <p class="title">
+          Maillots de toutes les époques !
+        </p>
+        <p class="sub-title">
+          La référence des maillots NBA 
+        </center>  
+        </p>
+      </div>
+      <div class="column">
+          <figure class="image is-135x135">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/fr/thumb/8/8e/Swoosh.svg/1200px-Swoosh.svg.png"
+              />
+            </figure>
+      </div>
+    <div class="column">
+        <figure class="image is-135x135">
+            <img
+              src="data:image/png;base64,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"
+            />
+          </figure>
+    </div>
+    <div class="column">
+        <figure class="image is-130x130">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/1024px-Adidas_Logo.svg.png"
+            />
+          </figure>
+    </div>
+    </section>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <center> <h1 class="title">Plus qu'un simple site !</h1> 
+            </center>
+          </p>
+          <div class="columns">
+              <div class="column">
+                  <figure class="image is-130x130">
+                      <img
+                        src="https://cdn2.basket4ballers.com/65588-large_default/maillot-nba-larry-bird-boston-celtics-1985-86-swingman-mitchellness-home.jpg"
+                      />
+                    </figure>
+        
+          <h2 class="sub-title"> Des maillots uniques </h2> 
+        </div>
+        <div class="column">
+            <figure class="image is-130x130">
+                <img
+                  src="https://www.lequipe.fr/_medias/img-photo-jpg/lebron-james-a-dispute-sa-premiere-saison-de-nba-en-2003-t-gilligan-presse-sports/1500000001677829/555:10,1807:1262-828-828-75/33c74"
+                />
+              </figure>
+              <h2 class="sub-title"> Suivez l'actualité </h2> 
+            </div>
+              <div class="column">
+                  <figure class="image is-129x129">
+                      <img
+                        src="https://gentlemanmoderne.com/wp-content/uploads/2022/02/plus-beaux-maillots-nba-lakers-city-edition-827x1024.jpg"
+                      />
+                    </figure>
+                    <h2 class="sub-title"> Un packaging personnalisé </h2> 
+                  </div>
+                </div>
+               <center> <button class="button is-warning">Ne ratez rien de notre actualité !</button> </center>
+      </section>
+      <div class="columns">
+          <div class="column">
+      <h1 class="title">Un concept unique</h1>
+      <h2 class="sub-title"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h2> 
+    </div>
+    <div class="column">    
+        <figure class="image is-129x129">
+            <img
+              src="https://www.lavenir.net/resizer/Po7TnoS7YlM3wCBEEUxZvkxkpjU=/768x512/filters:focal(368x254:378x244)/cloudfront-eu-central-1.images.arcpublishing.com/ipmgroup/VZ3IIK3SQZEDJJZ6AK3LKMRD2U.jpg"
+            />
+          </figure>
+        </div>
+      </div>
+      <div class="columns">
+          <div class="column">
+              <figure class="image is-129x129">
+                  <img
+                    src="https://www.parlons-basket.com/wp-content/uploads/2020/05/michael-jordan-bulls-e1590843137520.jpg"
+                  />
+                </figure>
+              </div>
+              <div class="column">
+                  <h1 class="title">Beaucoup d'informations</h1>
+                  <h2 class="sub-title"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h2> 
+                </div>
+              </div>
+              <div class="columns">
+                  <div class="column">
+              <h1 class="title"> Résultats NBA </h1>
+              <h2 class="sub-title"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h2> 
+            </div>
+            <div class="column">    
+                <figure class="image is-129x129">
+                    <img
+                      src="https://img.20mn.fr/ZGZG4bckT1CfpYe5zSgs2w/1200x768_avec-golden-gate-andre-iguodala-draymond-green-klay-thompson-et-steph-curry-ont-remporte-ensemble"
+                    />
+                  </figure>
+                </div>
+              </div>
+
+              <section class="hero is-link">
+                  <div class="hero-body">
+                      <div class="columns">
+                          <div class="column">
+                    <p class="title">
+                      Témoignanges :
+                    </p>
+                    <p class="subtitle">
+                      Avis 
+                    </p>
+                    <figure class="image is-129x129">
+                        <img class="is-rounded" src="https://cdn.radiofrance.fr/s3/cruiser-production/2021/12/e64d5ed3-de39-4a68-9858-efe671cb0f5c/870x489_264806464_638995620458920_5879980249543812560_n.jpg">
+                      </figure>
+                 
+                         
+                    <h2 class="sub-title"> Olivier - 34ans </h2> 
+                  </div>
+                  <div class="column">
+                    <br><br><br><br><br><br><br>
+                      <h2 class="sub-title"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h2> 
+                      <figure class="image is-128x128">
+                          <img
+                            src="https://media.istockphoto.com/vectors/quality-stars-rating-customer-review-with-gold-star-icon-5-stars-of-vector-id1186542137?k=20&m=1186542137&s=170667a&w=0&h=Inng79x4fNKbVOl-4QgQlUGKWBM9EpBlctmk4t93LZY="
+                          />
+                        </figure> 
+                </section>
+
+
+                <p class="title"> Nous contacter  
+      <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+          </div>
+        </div>
+        
+        <div class="field">
+          <label class="label">Username</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <p class="help is-success">This username is available</p>
+        </div>
+        
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-exclamation-triangle"></i>
+            </span>
+          </div>
+          <p class="help is-danger">This email is invalid</p>
+        </div>
+        
+        <div class="field">
+          <label class="label">Subject</label>
+          <div class="control">
+            <div class="select">
+              <select>
+                <option>Select dropdown</option>
+                <option>With options</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+        
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox">
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+        </div>
+        
+        <div class="field">
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="question">
+              Yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="question">
+              No
+            </label>
+          </div>
+        </div>
+        
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-link is-light">Cancel</button>
+          </div>
+        </div>
+  </body>
+</html>
